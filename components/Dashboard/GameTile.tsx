@@ -1,9 +1,9 @@
 "use client";
 
-import { GameTileProps } from "@/types/Dashboard-type";
+import { ImageProps } from "@/types/Dashboard-type";
 import Image from "next/image";
 
-export default function GameTile({ src, alt = "game" }: GameTileProps) {
+export default function GameTile({ src, alt = "game" }: ImageProps) {
   return (
     <div className="w-[100px] md:w-[130px] h-[180px] rounded-2xl overflow-hidden bg-black/20 shrink-0">
       <Image

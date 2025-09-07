@@ -39,3 +39,9 @@ export type ImageProps = {
   src: string;
   alt?: string;
 };
+
+export type ThemeCarouselProps = {
+  title: string;
+  items: string[];
+  className?: string;
+};

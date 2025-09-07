@@ -10,6 +10,7 @@ import Providers from "./Providers";
 import RecentBigWins from "./RecentBigWins";
 import Recommended from "./Recommended";
 import Slots from "./Slots";
+import Themes from "./Themes";
 
 export default function MainSection() {
   return (
@@ -20,8 +21,9 @@ export default function MainSection() {
       <Recommended />
       <Slots />
       <LiveCasino />
+      <Providers />
       <GameShows />
-      <Providers/>
+      <Themes />
       <LatestBets />
       <Popular />
     </section>

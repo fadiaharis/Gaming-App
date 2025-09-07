@@ -3,12 +3,13 @@
 import clsx from "clsx";
 
 import { SignInForm, SignUpForm } from "@/components/AuthForms";
-import Header from "@/components/Header/Header";
 import MainSection from "@/components/Dashboard/MainSection";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import { useHashModal } from "@/components/Hooks/useHashModal";
 import Modal from "@/components/Modal";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
-import { useHashModal } from "@/components/Hooks/useHashModal";
 
 export default function Page() {
   const { modal, close } = useHashModal();
@@ -25,6 +26,7 @@ export default function Page() {
         )}
       >
         <MainSection />
+        <Footer />
       </main>
 
       <Modal open={modal === "signin"} onClose={close} title="Sign in">

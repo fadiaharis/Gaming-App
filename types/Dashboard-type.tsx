@@ -7,3 +7,9 @@ export type Bet = {
   profit: string;
   profitCurrency: string;
 };
+
+export type BigWinCardProps = {
+  imgSrc: string;
+  player: string;
+  amount: string;
+};

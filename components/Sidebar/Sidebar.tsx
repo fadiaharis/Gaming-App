@@ -14,8 +14,8 @@ import {
 } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
-import { useSidebar } from "./SidebarContext";
 import SidebarBlocks from "./SidebarBlocks";
+import { useSidebar } from "./SidebarContext";
 import SidebarDropdown from "./SidebarDropdown";
 import SidebarItem from "./SidebarItem";
 
@@ -25,7 +25,7 @@ export default function Sidebar() {
   return (
     <aside
       className={clsx(
-        "fixed z-20 top-16 p-2 bottom-0 overflow-y-scroll hide-scrollbar bg-[#2a2d2e] border-white/10 transition-[width] duration-200 overflow-hidden flex flex-col",
+        "fixed z-20 top-16 p-2 pt-4 bottom-0 overflow-y-scroll hide-scrollbar bg-[#2a2d2e] border-white/10 transition-[width] duration-200 overflow-hidden flex flex-col",
         collapsed ? "w-16" : "w-64"
       )}
     >

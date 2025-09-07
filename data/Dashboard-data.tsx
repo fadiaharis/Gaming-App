@@ -1,4 +1,4 @@
-import { Bet } from "@/types/LatestBet-type";
+import { Bet, BigWinCardProps } from "@/types/Dashboard-type";
 
 export const bets: Bet[] = [
   {
@@ -90,5 +90,58 @@ export const bets: Bet[] = [
     multiplier: "4.98x",
     profit: "+906.36",
     profitCurrency: "S",
+  },
+];
+
+export const wins: BigWinCardProps[] = [
+  {
+    imgSrc: "/images/bingoadventure.avif",
+    player: "Lilian Harper",
+    amount: "$ 1,798.17",
+  },
+  {
+    imgSrc: "/images/fieryslots.avif",
+    player: "Susan Crawford",
+    amount: "$ 9,257.84",
+  },
+  {
+    imgSrc: "/images/lampofwonder.avif",
+    player: "Mali Johnson",
+    amount: "$ 9,182.10",
+  },
+  {
+    imgSrc: "/images/mayagoldcrazy.avif",
+    player: "Chan Park",
+    amount: "$ 9,788.23",
+  },
+  {
+    imgSrc: "/images/pushycats.avif",
+    player: "Maria Gomez",
+    amount: "$ 411.83",
+  },
+  {
+    imgSrc: "/images/reellove.avif",
+    player: "Mali Johnson",
+    amount: "$ 4,965.29",
+  },
+  {
+    imgSrc: "/images/shiftingseas.avif",
+    player: "Richard Lewis",
+    amount: "$ 5,021.64",
+  },
+  {
+    imgSrc: "/images/wildbuffalo.avif",
+    player: "Johan Svensson",
+    amount: "$ 5,751.58",
+  },
+  {
+    imgSrc: "/images/wolfofxmasstreet.avif",
+    player: "Sophia Johnson",
+    amount: "$ 7,823.11",
+  },
+  {
+    imgSrc: "/images/wolfreelsrapidlink.avif",
+    player: "Liam Smith",
+    amount: "$ 3,412.75",
   },
 ];

@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 import { SignInForm, SignUpForm } from "@/components/AuthForms";
 import Header from "@/components/Header/Header";
-import MainSection from "@/components/MainSection";
+import MainSection from "@/components/Dashboard/MainSection";
 import Modal from "@/components/Modal";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";

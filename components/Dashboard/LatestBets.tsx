@@ -1,6 +1,6 @@
 "use client";
 
-import { bets } from "@/data/LatestBets-data";
+import { bets } from "@/data/Dashboard-data";
 import { useState } from "react";
 
 export default function LatestBets() {

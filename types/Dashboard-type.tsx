@@ -29,7 +29,13 @@ export type CategoryItemProps = {
   active?: boolean;
 };
 
-export type GameTileProps = {
+export type ProviderCarouselProps = {
+  title: string;
+  items: { src: string; alt?: string }[];
+  className?: string;
+};
+
+export type ImageProps = {
   src: string;
   alt?: string;
 };

@@ -4,7 +4,7 @@ import { GlobeAltIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
-import { useSidebar } from "../SidebarContext";
+import { useSidebar } from "../Sidebar/SidebarContext";
 
 export default function Header() {
   const { collapsed, setCollapsed } = useSidebar();
@@ -57,7 +57,6 @@ export default function Header() {
             {/* Divider */}
             <div className="relative h-6 w-[0.5px] mr-2 bg-[#252424]"></div>
 
-            {/* Content button */}
             <button className="h-10 pr-2 py-0 flex items-center">
               <span className="font-semibold text-[#BBC6C9]">USDT</span>
             </button>

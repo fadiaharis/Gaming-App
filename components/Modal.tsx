@@ -1,13 +1,7 @@
 'use client'
 
+import { Props } from '@/types/Modal-type'
 import { useEffect } from 'react'
-
-type Props = {
-  open: boolean
-  onClose: () => void
-  title: string
-  children: React.ReactNode
-}
 
 export default function Modal({ open, onClose, title, children }: Props) {
   useEffect(() => {

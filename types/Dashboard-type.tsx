@@ -1,3 +1,5 @@
+import { ElementType } from "react";
+
 export type Bet = {
   game: string;
   player: string;
@@ -12,4 +14,22 @@ export type BigWinCardProps = {
   imgSrc: string;
   player: string;
   amount: string;
+};
+
+export type TileCarouselProps = {
+  title: string;
+  items: { src: string; alt?: string }[];
+  className?: string;
+};
+
+export type CategoryItemProps = {
+  href: string;
+  label: string;
+  Icon: ElementType;
+  active?: boolean;
+};
+
+export type GameTileProps = {
+  src: string;
+  alt?: string;
 };

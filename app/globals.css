@@ -38,6 +38,15 @@ body {
   color: rgb(2 0 35 / 1);
 }
 
+/* globals.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @layer components {
   .card {
     @apply bg-[var(--card)] rounded-2xl p-4 md:p-6 shadow-soft border border-white/5;

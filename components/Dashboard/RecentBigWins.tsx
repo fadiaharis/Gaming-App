@@ -15,7 +15,6 @@ export default function RecentBigWins() {
         <div className="h-3 w-3 rounded-full bg-green-500" />
         <h2 className="text-white font-semibold">Recent Big Wins</h2>
 
-        {/* Tabs (cosmetic) */}
         <nav className="ml-6 text-sm text-white/70 space-x-4 hidden md:block">
           <button className="relative pb-1 after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-6 after:bg-emerald-400">
             All
@@ -30,18 +29,20 @@ export default function RecentBigWins() {
       <div className="card relative overflow-hidden group rounded-2xl px-3 py-3">
         <div
           className={clsx(
-            "flex items-stretch whitespace-nowrap",
+            "flex items-stretch whitespace-nowrap w-max",
             "animate-[wins-marquee_26s_linear_infinite]",
             "group-hover:[animation-play-state:paused]"
           )}
         >
           {loop.map((w, i) => (
-            <BigWinCard key={i} {...w} />
+            <BigWinCard key={`a-${i}`} {...w} />
+          ))}
+          {loop.map((w, i) => (
+            <BigWinCard key={`b-${i}`} {...w} />
           ))}
         </div>
       </div>
 
-      {/* keyframes */}
       <style jsx global>{`
         @keyframes wins-marquee {
           0% {

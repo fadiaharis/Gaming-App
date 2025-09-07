@@ -1,10 +1,14 @@
 import {
-    ClockIcon,
-    CubeTransparentIcon,
-    FireIcon,
-    Squares2X2Icon,
-    StarIcon,
-    VideoCameraIcon,
+  ClockIcon,
+  CubeTransparentIcon,
+  FireIcon,
+  SparklesIcon,
+  Squares2X2Icon,
+  SquaresPlusIcon,
+  StarIcon,
+  SwatchIcon,
+  TableCellsIcon,
+  VideoCameraIcon,
 } from "@heroicons/react/24/outline";
 
 export const SidebarBlockItems = [
@@ -26,4 +30,8 @@ export const SidebarCasinoItems = [
     Icon: VideoCameraIcon,
   },
   { href: "/casino/providers", label: "Providers", Icon: StarIcon },
+  { href: "/casino/themes", label: "Themes", Icon: SwatchIcon },
+  { href: "/casino/tablegames", label: "Table Games", Icon: TableCellsIcon },
+  { href: "/casino/newReleases", label: "New Releases", Icon: SparklesIcon },
+  { href: "/casino/topPicks", label: "Top Picks", Icon: SquaresPlusIcon },
 ];

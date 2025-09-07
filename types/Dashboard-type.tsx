@@ -45,3 +45,9 @@ export type ThemeCarouselProps = {
   items: string[];
   className?: string;
 };
+
+export type GameTileProps = {
+  src: string;
+  alt?: string;
+  onClick?: () => void;
+};

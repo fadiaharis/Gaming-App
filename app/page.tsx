@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { SignInForm, SignUpForm } from "@/components/AuthForms";
 import MainSection from "@/components/Dashboard/MainSection";
 import Footer from "@/components/Footer/Footer";
+import LegalBar from "@/components/Footer/LegalBar";
 import Header from "@/components/Header/Header";
 import { useHashModal } from "@/components/Hooks/useHashModal";
 import Modal from "@/components/Modal";
@@ -27,6 +28,7 @@ export default function Page() {
       >
         <MainSection />
         <Footer />
+        <LegalBar />
       </main>
 
       <Modal open={modal === "signin"} onClose={close} title="Sign in">
